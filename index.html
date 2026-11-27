@@ -1,87 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Store It | SPP6 &amp; SPP7</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store IT | Science Lab Inventory App</title>
+<meta name="description" content="Store IT is a science lab inventory app designed with lab staff at the University of Belize. See how we took it from interviews to a working prototype.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-  <header>
-    <h1>Store It</h1>
-    <p>Know where every lab item is before you step into the storeroom.</p>
-  </header>
+<nav aria-label="Main">
+  <a class="brand" href="#home"><img src="images/logo.jpg" alt="">Store IT</a>
+  <a class="l" href="#team">Team</a>
+  <a class="l" href="#needfinding">Process</a>
+  <a class="l" href="#medium-fi">Prototype</a>
+  <a class="l" href="#poster">Poster</a>
+</nav>
 
-  <main>
-    <div class="grid">
-
-      <!-- PROTOTYPE (SPP6) -->
-      <section class="card prototype">
-        <h2>Try the Prototype</h2>
-        <p>Open the interactive Store It prototype and try the three tasks: find an item, update the inventory, and restock low supplies.</p>
-        <div class="links">
-          <a class="btn big" href="https://www.appsheet.com/start/62eae742-056b-4bb2-9ba7-b9b2ba2b7e73" target="_blank" rel="noopener">Open Prototype</a>
-        </div>
-        <br>
-        <p class="note">Built in AppSheet. If it asks you to sign in, use your Google account.</p>
-      </section>
-
-      <!-- CONCEPT VIDEO (SPP4) -->
-      <section class="card video">
-        <h2>Concept Video</h2>
-        <div class="video-wrap">
-          <iframe
-            src="https://player.vimeo.com/video/1229984652?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Store It concept video"></iframe>
-        </div>
-        <div class="links">
-          <a class="btn" href="https://youtu.be/bTAYUVwMyhg" target="_blank" rel="noopener">Watch on YouTube</a>
-          <a class="btn secondary" href="SPP4-Concept-Video(1).mp4" download>Download Video</a>
-        </div>
-      </section>
-
-      <!-- PROBLEM / SOLUTION -->
-      <section class="card problem">
-        <h2>Problem &amp; Solution</h2>
-        <p><strong>Problem:</strong> Science students waste time hunting through several storerooms for misplaced or used-up supplies, and supervisors learn about shortages too late.</p>
-        <p><strong>Solution:</strong> Store It keeps every item's record in one app, so anyone can find an item (by tab, search or voice), update it, and see what is low or empty before supplies run out.</p>
-      </section>
-
-      <!-- TASKS -->
-      <section class="card tasks-card">
-        <h2>Core Tasks</h2>
-        <ol class="tasks">
-          <li><strong>Looking for Items</strong> <span class="tag">Simple</span>
-            <span class="desc">Find a specific chemical without searching through multiple rooms.</span></li>
-          <li><strong>Updating Records</strong> <span class="tag">Medium</span>
-            <span class="desc">Keep the shared inventory accurate after taking, moving, or using up an item.</span></li>
-          <li><strong>Alerts on Low Supply</strong> <span class="tag">Complex</span>
-            <span class="desc">Notice a supply running low and restock it before anyone runs out.</span></li>
-        </ol>
-      </section>
-
-      <!-- DOCUMENTS -->
-      <section class="card docs">
-        <h2>Slides &amp; Documents</h2>
-        <div class="doc-list">
-          <a class="btn secondary" href="Store IT PDF, PPT, & Poster/Store IT Science Lab Inventory System.pdf" download>SPP6 Slides</a>
-          <a class="btn secondary" href="Store IT PDF, PPT, & Poster/Store It.pdf" target="_blank" rel="noopener">Pitch Slide</a>
-          <a class="btn secondary" href="README.pdf" target="_blank" rel="noopener">README</a>
-          <a class="btn secondary" href="SPP4-Group-1.html" target="_blank" rel="noopener">SPP4 Page</a>
-        </div>
-      </section>
-
+<header class="hero" id="home">
+  <div class="wrap">
+    <img src="images/logo.jpg" alt="Store IT logo: a flask with bubbles beside the words STORE IT">
+    <div class="txt">
+      <h1>Store <span>IT</span></h1>
+      <p class="vp">Know where every lab item is before you step into the storeroom.</p>
+      <p class="lead">Store IT is a science lab inventory app designed with lab staff at the University of Belize. It replaces paper logs and a once-a-year Excel master file with one app where anyone can find an item, see whether it is in stock, low or expired, and update its record. This site shows how we took it from interviews to a working prototype.</p>
+      <div class="links">
+        <a class="btn" href="https://www.appsheet.com/start/bdd45b0b-dedd-482d-b99f-b66468220122" target="_blank" rel="noopener">Try the prototype</a>
+        <a class="btn o" href="#needfinding">Read the story</a>
+      </div>
     </div>
-  </main>
+  </div>
+</header>
 
-  <footer>
-    <span>Amber Gill &bull; Cristina Gonzales &bull; Wasani Castillo</span>
-    <span>CMPS3141 Human Computer Interfaces &bull; SPP6 &amp; SPP7 &bull; November 2026</span>
-  </footer>
+<main>
+<section class="sec" id="team">
+  <div class="wrap">
+    <h2>The team</h2>
+    <p>We are three students in CMPS3141 - Human Computer Interfaces at the University of Belize. We shared the work, and each of us led different parts.</p>
+    <div class="team">
+      <div class="card"><h3>Amber Gill</h3><p class="role">Research and prototype lead</p><p>Led the original lab interviews, built the experience prototypes and the paper prototype, and built the AppSheet prototype.</p></div>
+      <div class="card"><h3>Cristina Gonzales</h3><p class="role">Documentation lead</p><p>Wrote the project reports, the problem domain and point-of-view work, and created presentation slides.</p></div>
+      <div class="card"><h3>Wasani Castillo</h3><p class="role">User testing and web lead</p><p>Ran the usability tests with lab staff, wrote the point-of-view statements, and built this website, the poster and the pitch slide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="needfinding">
+  <div class="wrap phase">
+    <div>
+      <span class="kicker">Phase 1 · SPP1</span>
+      <h2>Needfinding</h2>
+      <p>We began by interviewing the people who run the science labs: a senior laboratory technician and a science laboratory assistant. We asked how they find, count and record lab supplies today, and what frustrates them.</p>
+      <ul>
+        <li>Inventory is kept by hand in Excel, which leads to inconsistent records.</li>
+        <li>Staff suggested QR codes or barcodes to add items automatically, low-stock detection, and color-coded hazard symbols.</li>
+        <li>The system must work on phones and tablets and handle a large inventory.</li>
+        <li>Different kinds of users need different permissions.</li>
+      </ul>
+      <div class="links"><a class="btn o" href="files/SPP1-Needfinding-Slides.pdf">Slides (PDF)</a><a class="btn o" href="files/SPP1-Needfinding-Slides.pptx">Slides (PowerPoint)</a></div>
+    </div>
+    <figure><img src="images/empathy-map.jpg" alt="Empathy map showing what lab staff say, think, do and feel about inventory" loading="lazy"><figcaption>Our empathy map: what lab staff say, think, do and feel.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="pov">
+  <div class="wrap">
+    <span class="kicker">Phase 2 · SPP2</span>
+    <h2>Point of view and experience prototypes</h2>
+    <p>The labs hold chemicals, glassware, equipment and microscope slides across four labs and a storeroom. One large master file is updated about once a year, so records drift away from what is really on the shelves. We turned our interviews into three points of view, then tested a cheap prototype for each.</p>
+    <div class="three">
+      <div class="card"><h3>1. Location and visibility</h3><p>Finding an item should not mean checking several storerooms.</p></div>
+      <div class="card"><h3>2. Manual counting</h3><p>Counting 100+ containers by hand is slow and error-prone.</p></div>
+      <div class="card"><h3>3. Real-time updates</h3><p>Changes happen all year, so staff need quick updates.</p></div>
+    </div>
+    <div class="three">
+      <div class="card"><h3>Location sheet</h3><p>A paper sheet matched to shelf labels pointed people to the right shelf at once, but it became cluttered.</p></div>
+      <div class="card"><h3>Direct-log form</h3><p>A paper form showed what to update, but writing in the middle of a task slowed people down.</p></div>
+      <div class="card"><h3>Cardboard phone and QR scan</h3><p>Scanning a bottle took under two seconds and felt natural. Awkward shelf angles and curved bottles were a problem.</p></div>
+    </div>
+    <p>Scanning removed the handwriting friction, so we took a scanner-first idea forward.</p>
+    <div class="links"><a class="btn o" href="files/SPP2-Report.pdf">Report (PDF)</a><a class="btn o" href="files/SPP2-Slides.pdf">Slides (PDF)</a><a class="btn o" href="files/SPP2-Slides.pptx">Slides (PowerPoint)</a></div>
+  </div>
+</section>
+
+<section class="sec" id="video">
+  <div class="wrap">
+    <span class="kicker">Phase 3 · SPP4</span>
+    <h2>Concept video</h2>
+    <p>A short video tells the story: a student hunts through storeroom cabinets and paper binders, until a teammate finds the same item in seconds with Store IT.</p>
+    <div class="video"><iframe src="https://player.vimeo.com/video/1229984652?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Store IT concept video"></iframe></div>
+    <div class="links"><a class="btn" href="https://youtu.be/bTAYUVwMyhg" target="_blank" rel="noopener">Watch on YouTube</a><a class="btn o" href="files/SPP4-Concept-Video-Slides.pdf">Slides (PDF)</a><a class="btn o" href="files/SPP4-Concept-Video-Slides.pptx">Slides (PowerPoint)</a></div>
+  </div>
+</section>
+
+<section class="sec" id="low-fi">
+  <div class="wrap phase">
+    <div>
+      <span class="kicker">Phase 4 · SPP5</span>
+      <h2>Low-fidelity prototype and test</h2>
+      <p>We sketched many ideas and chose a scanner-first design: one main screen with a large Scan button, search and low-stock alerts, with item details and the Add Item form opening on top. We tested a paper version with four lab staff and student assistants on three tasks: find an item, record a removal, and add a new chemical.</p>
+      <ul>
+        <li>Each container needs its own QR code, because bottles of the same chemical come in different sizes.</li>
+        <li>Reusable glassware stays in drawers, while chemicals need to be tracked as they are used.</li>
+        <li>New chemicals need a received date, hazard rating and safety data sheet link.</li>
+        <li>Staff asked for generic role-based accounts, and for the Hummingbird Analytical Lab to keep a separate inventory.</li>
+      </ul>
+      <div class="links"><a class="btn o" href="files/SPP5-Report.pdf">Report (PDF)</a><a class="btn o" href="files/SPP5-Slides.pdf">Slides (PDF)</a><a class="btn o" href="files/SPP5-Slides.pptx">Slides (PowerPoint)</a></div>
+    </div>
+    <figure><img src="images/lowfi-sketches.jpg" alt="Paper prototype screens: welcome, log in and dashboard" loading="lazy"><figcaption>Our paper prototype: welcome, log in and the main dashboard.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="medium-fi">
+  <div class="wrap">
+    <span class="kicker">Phase 5 · SPP6</span>
+    <h2>Medium-fidelity prototype</h2>
+    <p>We built the clickable prototype in AppSheet. It has tabs for Equipment, Chemicals, Glassware, Office supplies and microscope slides, search and voice search, a stock status on every chemical (In Stock, Low Stock, Out of Stock or Expired), add and edit forms, and a stock log of what was received or used.</p>
+    <div class="two">
+      <figure><img src="images/app-chemicals.jpg" alt="Chemicals list showing a stock status on each chemical" loading="lazy"><figcaption>Every chemical shows its stock status.</figcaption></figure>
+      <figure><img src="images/app-equipment.jpg" alt="Equipment list with category tabs along the bottom" loading="lazy"><figcaption>Browse by category with the bottom tabs.</figcaption></figure>
+    </div>
+    <p><strong>Not built yet:</strong> QR scanning, role-based logins and separate labs, and automatic notifications. All data in the prototype is sample data.</p>
+    <p><strong>How to use it:</strong> open the prototype, sign in with Google if asked, then pick a tab, search for an item, and open it. The README explains each of the three tasks step by step.</p>
+    <div class="links"><a class="btn" href="https://www.appsheet.com/start/62eae742-056b-4bb2-9ba7-b9b2ba2b7e73" target="_blank" rel="noopener">Open the prototype</a><a class="btn o" href="files/SPP6-README.pdf">README (PDF)</a><a class="btn o" href="files/SPP6-Slides.pdf">Slides (PDF)</a><a class="btn o" href="files/SPP6-Slides.pptx">Slides (PowerPoint)</a></div>
+  </div>
+</section>
+
+<section class="sec" id="hi-fi">
+  <div class="wrap">
+    <span class="kicker">Phase 6 · SPP7</span>
+    <h2>High-fidelity prototype</h2>
+    <div class="soon"><p>Coming soon. The high-fidelity prototype will appear here, with screenshots and instructions on how to use it.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="poster">
+  <div class="wrap phase flip">
+    <div>
+      <span class="kicker">Phase 7 · SPP8</span>
+      <h2>Poster and pitch slide</h2>
+      <p>We made a poster and a one-slide, 30-second pitch for the FST STEM Fair on 11 November 2026. The poster tells the story from needfinding to prototype in screenshots and short captions.</p>
+      <div class="links"><a class="btn o" href="files/Poster.pdf">Poster (PDF)</a><a class="btn o" href="files/Poster.pptx">Poster (PowerPoint)</a><a class="btn o" href="files/Pitch-Slide.pdf">Pitch slide (PDF)</a><a class="btn o" href="files/Pitch-Slide.pptx">Pitch slide (PowerPoint)</a></div>
+    </div>
+    <figure><img src="images/poster.jpg" alt="The Store IT project poster" loading="lazy"><figcaption>The Store IT poster (11 x 17 in).</figcaption></figure>
+  </div>
+</section>
+</main>
+
+<footer>Store IT · Amber G., Cristina G., Wasani C. · CMPS3141 Human Computer Interfaces · University of Belize · 2026</footer>
 
 </body>
 </html>
